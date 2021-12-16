@@ -1,0 +1,180 @@
+@media (max-width:1400px){
+    .wrap-mitad{
+        width: fit-content;
+        margin: 0px auto;
+        min-height: 50%;
+        display: inline;
+    }
+    .wrap-mitad:nth-child(2){
+        float: right;
+    }
+    
+}
+
+@media (max-width:1315px){
+    .wrap-quinto{
+        width: 50%;
+        margin: 0px auto;
+        min-height: fit-content;
+    }
+    .wrap-quinto:last-child{
+        float: right;
+    }
+    #cajitas > .wrap-entero{
+        height: 56.1rem;
+    }
+}
+
+@media (max-width:1193px){
+    #cuerpo-pagina > .wrap-entero{
+        height: 75rem;
+    }
+}
+
+@media (max-width:1228px){
+    .caja-input > input{
+        width: 80%;
+    }
+}
+
+@media (max-width:1140px){
+    .wrap-tercio > img{
+        height: 2.5rem;
+        width: 2.5rem;
+    }
+}
+
+@media (max-width:1063px){
+    #cuerpo-pagina > .wrap-entero > aside > .titulo-cuadro{
+        font-size: 1.5rem;
+    }
+    #cuerpo-pagina > .wrap-entero{
+        height: 81.5rem;
+    }
+}
+
+@media (max-width:1055px){
+    #cuerpo-pagina > .wrap-entero{
+        height: 86rem;
+    }
+    .wrap-tercio > img{
+        height: 2rem;
+        width: 2rem;
+    }
+    .wrap-tercio > #ashetemele{
+        height: 3rem;
+        width: auto;
+    }
+}
+
+@media (max-width:1024px){
+    header > .wrap-entero{
+        height: 10rem;
+    }
+
+    #banner > .wrap-entero > h1{
+        font-size: 2.8rem;
+    }
+    .caja-input > input{
+        width: 73%;
+    }
+
+    #RRSS > .caja-rs > .fondo-blanco-sombra{
+        font-size: .85em;
+        margin: .6em 0em 0em .5em;
+    }
+
+    #RRSS > .caja-rs > span{
+        font-size: 2em;
+    }
+
+    #cuerpo-pagina > .wrap-entero > aside > .titulo-cuadro{
+        letter-spacing: 0px;
+    }
+
+    #cuerpo-pagina > .wrap-entero{
+        height: 95em;
+    }
+    #pie-pagina > .wrap-entero > nav> .wrap-tercio{
+        width: 48%;
+        min-height: 1px;
+        margin-right: 0px;
+    }
+
+    #pie-pagina > .wrap-entero > nav{
+        height: 46em;
+    }
+    .wrap-tercio > #mapa{
+        height: 17.5rem;
+        width: auto;
+    }
+
+}
+
+@media (max-width:767px){
+    .wrap-entero{
+        width: 100%;
+    }
+    .wrap-mitad{
+        width: 100%;
+        font-size: 1em;
+    }
+
+    .contenedor-quinto{
+        height: 20rem;
+    }
+
+    header > .wrap-entero > .wrap-mitad > .titulo-icono{
+        margin: 0.4em 0em .4em 5em;
+        padding: 0.05rem 3rem 0.05rem 2rem;
+    }
+
+    header > .wrap-entero > .wrap-mitad > ul > li{
+        font-size: 1.5rem;
+        padding: 1em .4em 1em .5em;
+    }
+
+    #banner > .wrap-entero{
+        padding: 0.5rem;
+        font-size: .8EM;
+    }
+
+    #banner > .wrap-entero > h1{
+        font-size: 2em;
+        letter-spacing: 0px;
+        height: 2em;
+        line-height: 2em;
+    }
+
+    
+    #cuerpo-pagina > .wrap-entero{
+        height: fit-content;
+        float: none;
+    }
+
+    #cuerpo-pagina > .wrap-entero > .wrap-tres-cuartos{
+        width: 100%;
+    }
+
+    #cuerpo-pagina > .wrap-entero > aside{
+        width: 100%;
+        float: none;
+    }
+
+
+    #pie-pagina > .wrap-entero > nav{
+        height: 57.5em;
+        padding-top: 1em;
+    }
+
+    #pie-pagina > .wrap-entero > nav> .wrap-tercio{
+        width: 100%;
+        float: none;
+    }
+
+    .wrap-tercio > #mapa{
+        height: 10em;
+        width: auto;
+    }
+
+}

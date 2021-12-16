@@ -1,0 +1,479 @@
+/* ----------------------------- IMPORTACIONES ---------------------- */
+
+@font-face {
+    font-family: Bebaso;
+    src: url(../fonts/BebasNeue.otf);
+}
+
+@font-face {
+    font-family: Iconos;
+    src: url(../fonts/websymbols-regular-webfont.ttf);
+}
+
+
+/* --------------------- GENERAL Y MEDIDAS WRAP ---------------------- */
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+
+}
+html{
+    height: fit-content;
+}
+
+body{
+    background-image: url(../img/pattern.png);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.clear{
+    clear: both;
+    float: none;
+}
+
+.wrap-entero{
+    width: 80%;
+    margin: 0px auto;
+    margin-bottom: 1.5rem;
+    height: fit-content;
+
+}
+
+.wrap-mitad{
+    width: 50%;
+    margin: 0px auto;
+    min-height: 100%;
+}
+
+.wrap-tercio{
+    width: 33%;
+    margin: 0px auto;
+    min-height: 100%;
+}
+
+.wrap-cuarto{
+    width: 20%;
+    margin: 0px auto;
+    min-height: 100%;
+}
+
+.wrap-tres-cuartos{
+    width: 70%;
+    margin: 0px auto;
+    min-height: 100%;
+}
+
+
+.wrap-quinto{
+    width: 20%;
+    margin: 0px auto;
+    min-height: 100%;
+}
+
+
+.logos{
+    font-family: "Iconos";
+}
+
+.fondo-blanco-sombra{
+    background-color: white;
+    border: solid #E5E5E5 2px;
+    box-shadow: 0px 0px 2px #E5E5E5;
+}
+
+.titulo-cuadro{
+    background-color: #E5E5E5;
+    padding: 0.8rem;
+    font-family: 'Bebaso';
+    font-size: 2.5rem;
+    text-align: center;
+    letter-spacing: 0.2rem;
+    box-shadow: 4px 4px 2px black;
+    background-image: url(../img/pxgray.png);
+}
+
+.caja-aside{
+    margin: .8rem;
+    width: 90%;
+    padding: 1rem .5rem 1rem .5rem;
+}
+
+.caja-input{
+    margin: .8rem auto .8rem auto;
+    padding: .2rem;
+    max-width: 13rem;
+    border-radius: .3rem;
+    box-shadow: inset 0px 0px 2px black;
+    background-color: white;
+}
+
+
+
+/* -------------------- HEADER ----------------------- */
+
+header{
+    background-color: black;
+    height: fit-content;
+    color: white;
+    font-family: "Bebaso";
+    display: block;
+}
+
+header > .wrap-entero{
+    height: 5rem;
+}
+
+header > .wrap-entero > .wrap-mitad{
+    float: left;    
+}
+
+header > .wrap-entero > .wrap-mitad > .titulo-icono{
+    background-color: crimson;
+    width: fit-content;
+    float: left;
+    height: 4.2rem;
+    margin-top: 0.4rem;
+    padding: 0.05rem 3rem 0.05rem 2rem;
+}
+
+header > .wrap-entero > .wrap-mitad> .titulo-icono:hover{
+    background-color: white;
+    color: crimson;
+    transition: 200ms;
+}
+
+header > .wrap-entero > .wrap-mitad > .titulo-icono > h1{   
+    float: right;
+    font-size: 4rem;
+    line-height: 4.5rem;
+    letter-spacing: 0.1rem;
+}
+
+header > .wrap-entero > .wrap-mitad > .titulo-icono > span{
+    margin-right: 0.5rem;
+    float: left;
+    font-size: 2.6rem;
+    line-height: 4rem;
+    animation-name: spin;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes spin{
+    from{
+        transform: rotateZ(0deg);
+    } 
+    to{
+        transform: rotateZ(360deg);
+    }
+}
+
+header > .wrap-entero > .wrap-mitad > ul{
+    width: 100%;
+    height: 5rem;
+    color: white;
+    text-decoration: none;
+}
+
+header > .wrap-entero > .wrap-mitad > ul > li{
+    float: left;
+    font-size: 2rem;
+    width: fit-content;
+    padding: 1.4rem 1.5rem 1rem 1.5rem;
+    margin: auto;
+    list-style-type: none;
+}
+
+header > .wrap-entero > .wrap-mitad > ul > li > a{
+
+    color: white;
+    text-decoration: none;
+    letter-spacing: 0.1rem;
+
+}
+
+
+/* --------------------- BANNER ------------------------ */
+
+#banner{
+    height: fit-content;
+}
+
+#banner > .wrap-entero{
+    background-color: white;
+    border: solid #E5E5E5 2px;
+    box-shadow: 0px 0px 2px #E5E5E5;
+    padding: 0.7rem;
+    overflow: hidden;
+}
+
+#banner > .wrap-entero > h1{
+    background-image: linear-gradient(90deg, crimson, #ED465A, #EDB970, #E4A241);
+    background-size: 200%;
+    background-position: center;
+    color: white;
+    font-family: "Bebaso";
+    font-size: 3.5rem;
+    font-weight: 1;
+    height: 7rem;
+    letter-spacing: 1px;
+    line-height: 7.5rem;
+    text-align: center;
+    text-shadow: 2px 2px 5px black;
+    animation: animacion-flashy-innecesaria 10s linear;
+    overflow: hidden;
+}
+
+
+@keyframes animacion-flashy-innecesaria{
+    0%{
+        transform: translateX(-600%) scale(5,5);
+        opacity: 1;
+    }
+    50%{
+        transform: translateX(600%) scale(5,5);
+        opacity: 1;
+    }
+    75%{
+        transform: translateX(-600%) scale(5,5);
+        opacity: 0;
+        text-shadow: none;
+        color: transparent;
+    }
+    100%{
+        transform: translateX(0%) scale(1,1);
+        opacity: 1;
+        opacity: 1;
+        text-shadow: none;
+    }
+}
+
+/* -------------------- 5 Cajitas --------------------------- */
+
+#cajitas {
+    height: fit-content;
+}
+
+#cajitas > .wrap-entero{
+    height: 18.7rem;
+}
+
+#cajitas > .wrap-entero > .wrap-quinto{
+    float: left;
+    text-align: center;
+    padding: 0.7rem 1rem 1rem 0rem;    
+}
+
+#cajitas > .wrap-entero > .wrap-quinto:last-child{
+    padding: 0.7rem 0rem 1rem 0rem;
+    
+}
+
+.contenedor-quinto{
+    border: solid #E5E5E5 2px;
+    box-shadow: 0px 0px 2px #E5E5E5;
+    background-color: white;
+    height: 17rem;
+    padding: 1rem;
+}
+
+.contenedor-quinto > span{
+    font-size: 4rem;
+} 
+
+.contenedor-quinto > h2{
+    font-size: 1.6rem;
+    margin-top: 0.7rem;
+    margin-bottom: 0.5rem;
+} 
+
+/* ---------------- Cuerpo Pagina ---------------- */
+
+#cuerpo-pagina > .wrap-entero{
+    height: 70rem;
+}
+
+#cuerpo-pagina > .wrap-entero > .wrap-tres-cuartos{
+    float: left;
+    height: fit-content;
+}
+
+#cuerpo-pagina > .wrap-entero > .wrap-tres-cuartos > .caja-articulo{
+    margin: 1rem;
+}
+
+#cuerpo-pagina > .wrap-entero > .wrap-tres-cuartos > .caja-articulo > h3{
+    float: right;
+    position: static;
+    background-color: #59111a;
+    color: white;
+    padding: 0.5rem;
+    font-weight: 1;
+    font-size: 1rem;
+    border-bottom-left-radius: 1rem;
+}
+
+#cuerpo-pagina > .wrap-entero > .wrap-tres-cuartos > .caja-articulo > h3 > span{
+    margin-left: 1rem;
+    margin-right: 1rem ;
+}
+
+#cuerpo-pagina > .wrap-entero > .wrap-tres-cuartos > .caja-articulo > h2{
+    margin: 1.5rem;
+    color: #663e04;
+}
+
+#cuerpo-pagina > .wrap-entero > .wrap-tres-cuartos > .caja-articulo > p{
+    margin: 1rem 1rem 2rem 1rem;
+}
+
+#cuerpo-pagina > .wrap-entero > .wrap-tres-cuartos > .caja-articulo:last-child{
+    padding: 2rem;
+    text-align: center;
+}
+
+#cuerpo-pagina > .wrap-entero > .wrap-tres-cuartos > .caja-articulo >a{
+    font-family: "Bebaso";
+    font-size: 3rem;
+    margin-left: auto;
+    color: #59111a;
+    text-decoration: none;
+}
+
+
+/* ------------------------------- ASIDE -------------------------- */
+
+
+#cuerpo-pagina > .wrap-entero > aside{
+    float: right;
+    width: 25%;
+}
+
+#cuerpo-pagina > .wrap-entero > aside > .titulo-cuadro{
+    height: fit-content;
+    font-size: 2rem;
+    padding: 0.45rem;
+}
+
+.caja-input > input{
+    border:0px;
+    margin: 0.1rem;
+}
+
+.caja-input > span{
+    margin: .1rem;
+}
+
+.caja-aside > .caja-input:nth-child(2) > span{
+    margin: .1rem .4rem .1rem .3rem; 
+}
+
+
+#cuerpo-pagina > .wrap-entero > aside > .caja-aside > button{
+    padding: .5em;
+    background-image: linear-gradient(180deg, crimson, #59111a, crimson);
+    border: solid 1px crimson;
+    margin: auto;
+    display: block;
+    color: white;
+}
+
+#cuerpo-pagina > .wrap-entero > aside > .caja-aside > a{
+    font-size: .8rem;
+    color: #59111a;
+    text-decoration: none;
+}
+
+#RRSS{
+    height: fit-content;
+    padding-bottom: 1.5rem ;
+}
+
+#RRSS > .caja-rs{
+    height: 4rem;
+    padding: .5rem .3rem .5rem .3rem;
+}
+
+#RRSS > .caja-rs > span{
+    font-size: 2.5rem;
+    float: left;
+}
+
+#RRSS > .caja-rs > .fondo-blanco-sombra{
+    display: block;
+    width: fit-content;
+    float: left;
+    margin: 1rem 0rem 0rem 2rem;
+    padding: .3rem;
+}
+
+/* ------------------------ PIE DE PAGINA ----------------- */
+
+#pie-pagina{
+    background-color: black;
+    height: fit-content;
+    color: white;
+}
+
+#pie-pagina > .wrap-entero{
+    display: block;
+    margin-bottom: 0px;
+}
+
+#pie-pagina > .wrap-entero > nav{
+    background-color: black;
+    height: 23rem;
+}
+
+#pie-pagina > .wrap-entero > nav> .wrap-tercio{
+    float: left;
+    text-align: center;
+    margin-right: .3%;
+}
+
+#pie-pagina > .wrap-entero > nav> .wrap-tercio > h2{
+    font-family: "Bebaso";
+    text-align: center;
+    background-color: #ED465A;
+    margin: 1rem;
+    border-radius: .3rem;
+    color: black;
+    font-size: 2rem;
+    padding-top: .2 rem;
+}
+
+#pie-pagina > .wrap-entero > nav> .wrap-tercio > ul{
+    margin-left: 4rem;
+    width: 65%;
+}
+
+#pie-pagina > .wrap-entero > nav> .wrap-tercio > ul > li{
+    padding: 1rem;
+    font-size: 1.6rem;
+    text-align: justify;
+    border-bottom: solid white;
+}
+
+#pie-pagina > .wrap-entero > nav> .wrap-tercio > ul > li:last-child{
+    border-bottom: none;
+}
+
+
+.wrap-tercio > #mapa{
+    height: 17.5rem;
+    width: auto;
+}
+
+.wrap-tercio > #ashetemele{
+    height: 4rem;
+    width: auto;
+}
+
+.wrap-tercio > img{
+    height: 2.8rem;
+    width: 2.8rem;
+}
+
